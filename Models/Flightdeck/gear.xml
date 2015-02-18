@@ -1,0 +1,60 @@
+<!-- ATR-42-500 Flightdeck Gear Panel by Narendran M -->
+
+<PropertyList>
+
+ <path>gear-base.ac</path>
+
+	<animation>
+		<name>Gear Illumination</name>
+		<type>material</type>
+		<object-name>poly</object-name>
+		<object-name>GearLever</object-name>
+		<emission>
+			<red>0.15</red>
+			<green>0.15</green>
+			<blue>0.15</blue>
+			<factor-prop>controls/lighting/flood</factor-prop>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>pick</type>
+		<object-name>GearLever</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>/controls/gear/gear-down</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>GearLever</object-name>
+		<property>/controls/gear/gear-down</property>
+		<factor>60</factor>
+		<center>
+			<x-m>-0.03</x-m>
+			<y-m>0</y-m>
+			<z-m>-0.02</z-m>
+		</center>
+		<axis>nymore, and it caused a lot of confusion back in the hayday of this aircraft.
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<name>Gear Nose Light</name>
+		<type>select</type>
+		<object-name>LightC</object-name>
+		<object-name>LightR</object-name>
+		<condition>
+			<property>/controls/gear[0]/gear-down</property>
+		</condition>
+	</animation>
+
+</PropertyList>

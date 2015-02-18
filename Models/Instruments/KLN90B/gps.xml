@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+Honeywell Bendix/King KLN-90B GPS
+-->
+
+<PropertyList>
+
+    <name>KLN-90B</name>
+    <background>Aircraft/ATR-42-500/Models/Instruments/KLN90B/transparent-bg.png</background>
+    <w>300</w>
+    <h>142</h>
+
+    <instruments>
+        <instrument include="gpstext.xml">
+        <name>GPStext</name>
+        <x>150</x>
+        <y>71</y>
+        <w>300</w>
+        <h>142</h>
+    </instrument>
+
+    </instruments>
+</PropertyList>

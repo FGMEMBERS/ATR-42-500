@@ -1,0 +1,28 @@
+The ATR-42-500 is a modification and rebuild of the old ATR_42 series. 
+
+Authors of the Old ATR_42 : 
+
+--> Jon Bourgeois (JSBSim FDM)
+--> Eric Kenning (3D Model)
+--> Victhor Foster (Animation)s
+
+Thanks you guys, for easing our work by making an amazing base-plane, and also for giving us permission to edit this model.
+
+Authors (Modifiers) of this ATR-42-500 /-600 :
+
+--> Narendran Muraleedharan (YASim FdM, systems, cockpit, instruments, extras)
+--> Malik Daniels (modifications to the 3d model, UV mapping)
+--> Skyop (lights, some systems and a lotta help) 
+--> Anusil Nilu Mishra (Research)
+--> Syd Adams, xsaint (instrumentation from b1900d / 737-900ER)
+--> Sam Clancy (Cabin Announcements)
+
+ATR-42-500 / -600 livery Authors :
+
+--> Narendran Muraleedharan
+--> Sushant Shajil
+--> Sam Clancy
+--> Xiang Guo
+--> Hafidh Mahasin
+
+for any help, contact <theomegahangar.co.cc>

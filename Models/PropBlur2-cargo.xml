@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<PropertyList>
+  	
+  <path>ATR-PropBlur-cargo.ac</path>
+
+<animation>
+<type>select</type>
+<object-name>PropBlur</object-name>
+<condition>
+  <equals>
+   <property>sim/model/livery/configuration</property>
+   <value>cargo</value>
+  </equals>
+</condition>
+</animation>
+
+	<animation>
+		<name>Fast fan</name>
+		<type>select</type>
+		<object-name>PropBlur</object-name>
+		<condition>
+			<greater-than-equals>
+				<property>engines/engine[1]/n1</property>
+				<value>60</value>
+			</greater-than-equals>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>spin</type>
+		<object-name>PropBlur</object-name>
+		<property>engines/engine[1]/n1</property>
+		<factor>4</factor>
+		 <center>
+ 		 	<x-m>0</x-m>
+ 		 	<y-m>0</y-m>
+  			<z-m>0</z-m>
+ 		</center>
+ 		<axis>
+ 		 	<x>1.0</x>
+  			<y>0.0</y>
+  			<z>0.0</z>
+ 		</axis>
+	</animation>
+  	
+</PropertyList>
+

@@ -1,0 +1,28 @@
+<!-- ATR-42-500 Flightdeck by Narendran M -->
+
+<PropertyList>
+
+ <path>extra1.ac</path>
+
+	<animation>
+		<name>Text Select</name>
+		<type>select</type>
+		<object-name>text</object-name>
+		<condition>
+			<property>controls/lighting/logo-lights</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Text Illumination</name>
+		<type>material</type>
+		<object-name>text</object-name>
+		<emission>
+			<red>0.9</red>
+			<green>0.9</green>
+			<blue>0.9</blue>
+			<factor-prop>controls/lighting/logo-lights</factor-prop>
+		</emission>
+	</animation>
+
+</PropertyList>

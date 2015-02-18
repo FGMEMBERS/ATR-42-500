@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<PropertyList>
+  	
+  <path>ATR-Prop4.ac</path>
+
+<animation>
+<type>select</type>
+<object-name>Prop</object-name>
+<condition>
+  <equals>
+   <property>sim/model/livery/configuration</property>
+   <value>cargo</value>
+  </equals>
+</condition>
+</animation>
+
+	<animation>
+		<name>Slow fan 1</name>
+		<type>select</type>
+		<object-name>Prop</object-name>
+		<condition>
+			<less-than>
+				<property>engines/engine[0]/n1</property>
+				<value>60</value>
+			</less-than>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>spin</type>
+		<object-name>Prop</object-name>
+		<property>engines/engine[0]/n1</property>
+		<factor>-4</factor>
+		 <center>
+ 		 	<x-m>0</x-m>
+ 		 	<y-m>0</y-m>
+  			<z-m>0</z-m>
+ 		</center>
+ 		<axis>
+ 		 	<x>1.0</x>
+  			<y>0.0</y>
+  			<z>0.0</z>
+ 		</axis>
+	</animation>
+  	
+</PropertyList>
+

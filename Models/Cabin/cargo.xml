@@ -1,0 +1,25 @@
+<!-- ATR-42-500 Flightdeck by Narendran M -->
+
+<PropertyList>
+
+ <path>atr-42-cargo-hold.ac</path>
+
+<!-- No Cabin for Cargo Config -->
+
+<animation>
+<type>select</type>
+<object-name>Cabin</object-name>
+<object-name>Floor</object-name>
+<object-name>blah</object-name>
+<object-name>block</object-name>
+<object-name>CabinDiv3</object-name>
+<object-name>door</object-name>
+<condition>
+  <equals>
+   <property>sim/model/livery/configuration</property>
+   <value>cargo</value>
+  </equals>
+</condition>
+</animation>
+
+</PropertyList>

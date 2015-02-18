@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Kingfisher Airlines</name>
+            <texture>KFR.png</texture>
+	    <lights>KFR-light.png</lights>
+	    <seat-colour>red-leather.png</seat-colour>
+	    <seat-logo>logos/KFR.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

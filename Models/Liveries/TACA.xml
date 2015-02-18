@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">TACA Regional</name>
+            <texture>TACA.png</texture>
+	    <lights>TACA-light.png</lights>
+	    <seat-colour>red-leather.png</seat-colour>
+	    <seat-logo>logos/TACA.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

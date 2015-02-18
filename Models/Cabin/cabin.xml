@@ -1,0 +1,94 @@
+<!-- ATR-42-500 Flightdeck by Narendran M -->
+
+<PropertyList>
+
+ <path>atr-42-cabin.ac</path>
+
+<!-- No Cabin for Cargo Config -->
+
+   <animation>
+       <type>material</type>
+       <object-name>Seats</object-name>
+       <property-base>sim/model/livery</property-base>
+       <texture-prop>seat-colour</texture-prop>
+       <texture>red-leather.png</texture>
+   </animation>
+
+   <animation>
+       <type>material</type>
+       <object-name>Logo</object-name>
+       <property-base>sim/model/livery</property-base>
+       <texture-prop>seat-logo</texture-prop>
+       <texture>logos/KFR.png</texture>
+   </animation>
+
+<animation>
+<type>select</type>
+<object-name>Cabin</object-name>
+<object-name>OverheadBins</object-name>
+<object-name>Floor</object-name>
+<object-name>blah</object-name>
+<object-name>Seats</object-name>
+<object-name>rect</object-name>
+<object-name>CabinDiv1</object-name>
+<object-name>CabinDiv2</object-name>
+<object-name>CabinDiv3</object-name>
+<object-name>door</object-name>
+<object-name>ifes</object-name>
+<object-name>em-floor</object-name>
+<object-name>Logo</object-name>
+<condition>
+  <equals>
+   <property>sim/model/livery/configuration</property>
+   <value>pax</value>
+  </equals>
+</condition>
+</animation>
+
+<!-- Cabin Illumination -->
+
+	<animation>
+		<name>Cabin Illumination 1</name>
+		<type>material</type>
+                <object-name>Cabin</object-name>
+		<emission>
+			<red>0.8</red>
+			<green>0.8</green>
+			<blue>0.8</blue>
+			<factor-prop>controls/lighting/cabin1-lights</factor-prop>
+		</emission>
+	</animation> 
+
+	<animation>
+		<name>Cabin Illumination 2</name>
+		<type>material</type>
+                <object-name>OverheadBins</object-name>
+                <object-name>Floor</object-name>
+                <object-name>blah</object-name>
+                <object-name>rect</object-name>
+                <object-name>door</object-name>
+     		<object-name>Seats</object-name>
+                <object-name>CabinDiv1</object-name>
+                <object-name>CabinDiv2</object-name>
+                <object-name>CabinDiv3</object-name>
+		<object-name>Logo</object-name>
+		<emission>
+			<red>0.4</red>
+			<green>0.4</green>
+			<blue>0.4</blue>
+			<factor-prop>controls/lighting/cabin1-lights</factor-prop>
+		</emission>
+	</animation> 
+
+<!-- Aircraft Passengers -->
+
+	<animation>
+		<name>Show / Hide PAX on Select Animation</name>
+		<type>select</type>
+		<object-name>pax</object-name>
+		<condition>
+			<property>controls/lighting/pax</property>
+		</condition>
+	</animation>
+
+</PropertyList>

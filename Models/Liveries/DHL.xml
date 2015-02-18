@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">DHL Cargo</name>
+            <texture>DHL.png</texture>
+	    <lights>DHL-light.png</lights>
+<configuration type="string">cargo</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">FedEx Express Cargo</name>
+            <texture>FEX.png</texture>
+	    <lights>FEX-light.png</lights>
+<configuration type="string">cargo</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

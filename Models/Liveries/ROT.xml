@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">TAROM Airlines</name>
+            <texture>ROT.png</texture>
+	    <lights>ROT-light.png</lights>
+	    <seat-colour>leather2.png</seat-colour>
+	    <seat-logo>logos/ROT.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

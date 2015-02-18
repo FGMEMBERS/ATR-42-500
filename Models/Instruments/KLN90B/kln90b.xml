@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!-- KLN90B GPS receiver
+Syd Adams
+ -->
+
+<PropertyList>
+
+    <path>kln90b.ac</path>
+
+<!--    OSG hotspots  -->
+
+    <panel>
+        <name>GPS screen</name>
+        <path>Aircraft/ATR-42-500/Models/Instruments/KLN90B/gps.xml</path>
+        <bottom-left>
+            <x-m>0.003</x-m>
+            <y-m>-0.033</y-m>
+            <z-m>-0.013</z-m>
+        </bottom-left>
+        <bottom-right>
+            <x-m>0.003</x-m>
+            <y-m>0.033</y-m>
+            <z-m>-0.013</z-m>
+        </bottom-right>
+        <top-left>
+            <x-m>0.003</x-m>
+            <y-m>-0.033</y-m>
+            <z-m>0.018</z-m>
+        </top-left>
+    </panel>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LH.dn</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.lh_menu(-1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LH.up</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.lh_menu(1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LH.dn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.lh_page(-1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LH.up</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.lh_page(1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RH.dn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.rh_page(-1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RH.up</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.rh_page(1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RH.dn</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.rh_menu(-1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RH.up</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>nasal</command>
+                <script>systems.Gps.rh_menu(1)</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>KLN90B.pwr</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                 <command>nasal</command>
+         <script>systems.Gps.power_up();</script>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>DIRECT.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                 <command>nasal</command>
+         <script>systems.Gps.direct_to();</script>
+            </binding>
+        </action>
+    </animation>
+
+</PropertyList>

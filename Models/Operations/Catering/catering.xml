@@ -1,0 +1,15 @@
+<PropertyList>
+<path>catering_vehicle.ac</path>
+
+<offsets>
+<heading-deg>360</heading-deg>
+</offsets>
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <property>controls/switches/catering</property>
+      </condition>
+  </animation>
+
+</PropertyList>

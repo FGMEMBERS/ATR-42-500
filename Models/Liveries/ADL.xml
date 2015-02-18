@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Air Dolomiti</name>
+            <texture>ADL.png</texture>
+	    <lights>ADL-light.png</lights>
+	    <seat-colour>blue-cloth.png</seat-colour>
+	    <seat-logo>logos/ADL.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

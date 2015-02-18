@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <sim>
+	<description>ATR-42-500</description>
+	<author>Narendran Muraleedharan (FDM, Effects, Systems), Malik Daniels (3D help), Sam Clancy (Sounds), (Jon,Eric and Victhor (base ATR 42)), (Steve, Sam and Xiang (Liveries)) </author>
+        <status>beta</status>
+        <aircraft-version>3.2</aircraft-version>
+        <flight-model>yasim</flight-model>
+        <fuel-fraction>0.75</fuel-fraction>
+        <aero>ATR-42</aero>
+		
+	<startup>
+            <splash-texture>Aircraft/ATR-42-500/splash.png</splash-texture>
+        </startup>
+
+        <model>
+            <path>Aircraft/ATR-42-500/Models/ATR-42-500.xml</path>
+            <livery>
+               <file type="string">KFR</file>
+		<configuration>pax</configuration>
+            </livery> 
+	<start-idling type="bool">0</start-idling>
+        </model>
+
+<view n="0">
+	<name>Pilot View</name>
+	<type>lookfrom</type>
+	<internal type="bool">true</internal>
+	<config>
+		<x-offset-m type="double">-.38</x-offset-m>
+		<y-offset-m type="double">2.38</y-offset-m>
+		<z-offset-m type="double">-5.9</z-offset-m>
+		<pitch-offset-deg>0</pitch-offset-deg>
+		<limits>
+			<enabled type="bool">true</enabled>
+			<left>
+				<heading-max-deg type="double">140</heading-max-deg>
+				<x-offset-max-m type="double">0.35</x-offset-max-m>
+				<x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+			</left>
+			<right>
+				<heading-max-deg type="double">160</heading-max-deg>
+				<x-offset-max-m type="double">0.25</x-offset-max-m>
+				<x-offset-threshold-deg type="double">65</x-offset-threshold-deg>
+			</right>
+		</limits>
+	</config>
+</view>
+
+<view n="100">
+    <name>Wing View</name>
+    <type>lookfrom</type>
+    <internal archive="y">false</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">55</default-field-of-view-deg>
+      <pitch-offset-deg>-8.0</pitch-offset-deg>
+      <heading-offset-deg type="double">90</heading-offset-deg> <!-- parallel to the panel -->
+      <x-offset-m archive="y"> -2 </x-offset-m> <!--Left/Right-->
+      <y-offset-m archive="y"> 2.4 </y-offset-m> <!--Up/Down-->
+      <z-offset-m archive="y"> 2.00 </z-offset-m> <!--Fdw/Back-->
+    </config>
+  </view>
+
+		<view n="101">
+			<name>Passenger View</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<x-offset-m archive="y">-1</x-offset-m>
+				<y-offset-m archive="y">2.33</y-offset-m>
+				<z-offset-m archive="y">3.72</z-offset-m>
+				<pitch-offset-deg archive="y">0</pitch-offset-deg>
+			</config>
+		</view>
+
+		<view n="102">
+			<name>Walk View</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<x-offset-m archive="y">0</x-offset-m>
+				<y-offset-m archive="y">2.7</y-offset-m>
+				<z-offset-m archive="y">7</z-offset-m>
+				<pitch-offset-deg archive="y">0</pitch-offset-deg>
+			</config>
+		</view>
+
+		<view n="103">
+			<name>Cabin Front View</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<x-offset-m archive="y">0</x-offset-m>
+				<y-offset-m archive="y">2.7</y-offset-m>
+				<z-offset-m archive="y">-2.9</z-offset-m>
+				<pitch-offset-deg archive="y">0</pitch-offset-deg>
+      				<heading-offset-deg type="double">180</heading-offset-deg>
+			</config>
+		</view>
+
+
+   <airport>
+        <runways>
+            <start-offset-m>25</start-offset-m>
+        </runways>
+    </airport>
+
+        <chase-distance-m>-80</chase-distance-m>
+		
+        <sound>
+            <path>Aircraft/ATR-42-500/Sounds/ATR-sound.xml</path>
+            <switch type = "bool">0</switch>
+  <Evolume>1</Evolume>
+        </sound>	
+		
+<!-- Ajuste dos flaps -->
+				<flaps>
+					<setting>0.000</setting>
+					<setting>0.125</setting>
+					<setting>0.250</setting>
+					<setting>0.375</setting>
+					<setting>0.500</setting>
+					<setting>0.625</setting>
+					<setting>0.750</setting>
+					<setting>0.875</setting>
+					<setting>1.000</setting>
+				</flaps>
+
+<!-- O menu de ajuda dessa aeronave -->
+		        <help>
+            <title>ATR-42-500</title>
+            <key>
+                <name>g/G</name>
+                <desc>raise/lower landing gear</desc>
+            </key>
+            <key>
+                <name>w/W</name>
+                <desc>Walk Forward / Backward</desc>
+            </key>
+            <key>
+                <name>B (shift and b)</name>
+                <desc>toggle parking brakes</desc>
+            </key>
+            <key>
+                <name>pgup/pgdn</name>
+                <desc>throttle increase/decrease</desc>
+            </key>
+            <key>
+                <name>[/]</name>
+                <desc>raise/lower flaps</desc>
+            </key>
+            <key>
+                <name>Ctrl-b</name>
+                <desc>toggle speed brakes</desc>
+            </key>
+            <key>
+                <name>s</name>
+                <desc>hold to start engines</desc>
+            </key>
+</help>
+
+        <menubar>
+            <default>
+   <menu n="100">
+   <item n="10">
+    <label>Pushback</label>
+    <name>pushback</name>
+    <binding>
+     <command>dialog-show</command>
+     <dialog-name>pushback</dialog-name>
+    </binding>
+   </item>
+<item>
+						<name>lighting</name>
+						<label>Aircraft Lights</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							 var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/ATR-42-500/Systems/lights.xml");
+							 lights.open();
+							</script>
+						</binding>
+					</item>
+<item>
+						<name>lighting</name>
+						<label>Show Aircraft Crew</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							 var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/ATR-42-500/Systems/people.xml");
+							 lights.open();
+							</script>
+						</binding>
+					</item>
+<item>
+						<name>engine-failure</name>
+						<label>Engine Failures</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+							 var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/ATR-42-500/Systems/failures.xml");
+							 lights.open();
+							</script>
+						</binding>
+					</item>
+  </menu>
+                <menu n="100">
+                    <label>ATR-42-500</label>
+                    <enabled type="bool">true</enabled>
+                    
+			<item>
+                        <label>Start Systems</label>
+                        <binding>
+                            <command>property-toggle</command>
+                            <property>sim/model/start-idling</property>
+                        </binding>
+                    </item>
+
+                   <item>
+    <label>Select Livery</label>
+    <binding>
+     <command>nasal</command>
+     <script>aircraft.livery.dialog.toggle()</script>
+    </binding>
+   </item>
+
+<item>
+      <label>Airport Operations</label>
+      <binding>
+       <command>nasal</command>
+       <script>
+	  var mal = gui.Dialog.new("/sim/gui/dialogs/Boeing747/menu/dialog", 
+                                                              "Aircraft/ATR-42-500/Dialogs/airportoperations-dialog.xml");
+        mal.open();
+       </script>
+      </binding>
+     </item>
+
+<item>
+      <label>Announcements</label>
+      <binding>
+       <command>nasal</command>
+       <script>
+	  var mal = gui.Dialog.new("/sim/gui/dialogs/Boeing747/menu/dialog", 
+                                                              "Aircraft/ATR-42-500/Dialogs/announcements-dialog.xml");
+        mal.open();
+       </script>
+      </binding>
+     </item>
+</menu>
+            </default>
+        </menubar>
+
+
+
+
+<systems>
+        <path>Aircraft/ATR-42-500/Systems/systems.xml</path>
+            <autopilot>
+                <path>Aircraft/ATR-42-500/Systems/ATR-AP.xml</path>
+            </autopilot>
+        </systems>
+
+        <instrumentation>
+            <path>Aircraft/ATR-42-500/instrumentation.xml</path>
+        </instrumentation>
+
+        <hud>
+            <enable3d>false</enable3d>
+        </hud>
+        <virtual-cockpit archive="y">true</virtual-cockpit>
+        <allow-toggle-cockpit>true</allow-toggle-cockpit>
+
+		<systems>
+			<!-- Autopilot ATR-42-500 -->
+			<autopilot>
+				<path>Aircraft/ATR-42-500/Systems/ATR-42-500-autopilot.xml</path>
+			</autopilot>
+        </systems>
+
+    <autopilot>
+        <locks>
+            <passive-mode type="bool">true</passive-mode>
+        </locks>
+    </autopilot>
+ 
+        <weight n="0">
+            <name>Crew</name>
+            <weight-lb>250</weight-lb> 
+            <max-lb>300</max-lb>
+            <min-lb>120</min-lb>
+        </weight>
+
+        <weight n="1">
+            <name>Passenger</name>
+            <weight-lb>2000</weight-lb>
+            <max-lb>4000</max-lb>
+            <min-lb>0</min-lb>
+        </weight>
+
+ <weight n="2">
+            <name>Cargo</name>
+            <weight-lb>3000</weight-lb>
+            <max-lb>3500</max-lb>
+            <min-lb>0</min-lb>
+        </weight>
+
+</sim>
+
+ <consumables>
+        <fuel>
+            <tank n="0"><name>LH Main</name></tank>
+            <tank n="1"><name>Center</name></tank>
+            <tank n="2"><name>RH Main</name></tank>
+        </fuel>
+ </consumables>
+
+<input>
+        <keyboard>
+<key n="119">
+   <name>w</name>
+    <desc>Walk forward toward view</desc>
+    <repeatable>true</repeatable>
+    <binding>
+     <command>nasal</command>
+     <script>walk.walk_about(0.1)</script>
+    </binding>
+  </key>
+  <key n="87">
+   <name>W</name>
+   <desc>Walk backward from view</desc>
+   <repeatable>true</repeatable>
+   <binding>
+    <command>nasal</command>
+    <script>walk.walk_about(-0.1)</script>
+   </binding>
+  </key>  
+<key n="127">
+                <name>Delete</name>
+                <desc>Properller Angle to -10 degrees</desc>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[0]/reverser</property>
+                </binding>
+                <binding>
+                    <command>property-toggle</command>
+                    <property>controls/engines/engine[1]/reverser</property>
+                </binding>
+            </key>
+        </keyboard>
+    </input>
+
+    <controls>
+        <gear>
+            <brake-parking type="bool">1</brake-parking>
+        </gear>
+<lighting>
+  <strobe>1</strobe>
+  <beacon>1</beacon>
+  <landing-lights>1</landing-lights>
+  <nav-lights>1</nav-lights>
+ </lighting>
+    </controls>
+
+    <nasal>
+        <atr>
+            <file>Aircraft/ATR-42-500/Nasal/Electrical.nas</file>
+            <file>Aircraft/ATR-42-500/Nasal/systems.nas</file>
+            <file>Aircraft/ATR-42-500/Nasal/lighting.nas</file>
+        </atr>
+	<systems>
+	    <file>Aircraft/ATR-42-500/Nasal/systems.nas</file>
+            <file>Aircraft/ATR-42-500/Models/Instruments/KLN90B/kln90b.nas</file>
+            <file>Aircraft/ATR-42-500/Nasal/flightdirector.nas</file>
+	</systems>
+    <walk>
+    <file>Aircraft/ATR-42-500/Nasal/walk.nas</file>
+    </walk>
+   <livery>
+     <file>Aircraft/ATR-42-500/Nasal/livery.nas</file>
+   </livery>
+   <tyresmoke>
+    <file>Aircraft/ATR-42-500/Nasal/tyresmoke.nas</file>
+   </tyresmoke>
+</nasal>
+
+</PropertyList>

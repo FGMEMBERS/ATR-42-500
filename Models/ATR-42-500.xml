@@ -1,0 +1,1002 @@
+<?xml version="1.0"?>
+<PropertyList>
+  	
+  <path>ATR_42-500.ac</path>
+  	
+<!-- 3D Model Orientation, sets model up for proper direction and attitude -->
+	
+	<offsets>
+	  <pitch-deg>0</pitch-deg> 
+	  <heading-deg>90</heading-deg>
+	  <roll-deg>-1.3</roll-deg>
+	  <x-m>-8</x-m>
+	  <y-m>0</y-m>
+	  <z-m>1.3</z-m>
+	</offsets>
+
+<!-- Passenger / Cargo Config Animation -->
+
+<animation>
+<type>select</type>
+<object-name>Windows</object-name>
+<object-name>Prop1</object-name>
+<object-name>Prop2</object-name>
+<condition>
+  <equals>
+   <property>sim/model/livery/configuration</property>
+   <value>pax</value>
+  </equals>
+</condition>
+</animation>
+<animation>
+<type>select</type>
+<object-name>NoWindows</object-name>
+<condition>
+  <equals>
+   <property>sim/model/livery/configuration</property>
+   <value>cargo</value>
+  </equals>
+</condition>
+</animation>
+
+<!-- Propeller Blur when n1 > 60 -->
+
+	<model>
+		<name>Propeller 1</name>
+		<path>Aircraft/ATR-42-500/Models/Prop1.xml</path>
+        <offsets>
+ 		 <x-m>-3.978</x-m>
+ 		 <y-m>-6.273</y-m>
+  		 <z-m>1.701</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>Propeller 2</name>
+		<path>Aircraft/ATR-42-500/Models/Prop2.xml</path>
+        <offsets>
+ 		 <x-m>3.978</x-m>
+ 		 <y-m>-6.273</y-m>
+  		 <z-m>1.701</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>		
+
+
+	<model>
+		<name>Propeller Blur 1</name>
+		<path>Aircraft/ATR-42-500/Models/PropBlur1-cargo.xml</path>
+        <offsets>
+ 		 <x-m>-3.978</x-m>
+ 		 <y-m>-6.273</y-m>
+  		 <z-m>1.701</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>Propeller Blur 2</name>
+		<path>Aircraft/ATR-42-500/Models/PropBlur2-cargo.xml</path>
+        <offsets>
+ 		 <x-m>3.978</x-m>
+ 		 <y-m>-6.273</y-m>
+  		 <z-m>1.701</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>Propeller Blur 1</name>
+		<path>Aircraft/ATR-42-500/Models/PropBlur1.xml</path>
+        <offsets>
+ 		 <x-m>-3.978</x-m>
+ 		 <y-m>-6.273</y-m>
+  		 <z-m>1.701</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>Propeller Blur 2</name>
+		<path>Aircraft/ATR-42-500/Models/PropBlur2.xml</path>
+        <offsets>
+ 		 <x-m>3.978</x-m>
+ 		 <y-m>-6.273</y-m>
+  		 <z-m>1.701</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<animation>
+		<name>Slow fan 1</name>
+		<type>select</type>
+		<object-name>Prop1</object-name>
+		<condition>
+			<less-than>
+				<property>engines/engine[0]/n1</property>
+				<value>60</value>
+			</less-than>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Slow fan 2</name>
+		<type>select</type>
+		<object-name>Prop2</object-name>
+		<condition>
+			<less-than>
+				<property>engines/engine[1]/n1</property>
+				<value>60</value>
+			</less-than>
+		</condition>
+	</animation>
+
+<!-- Flight Deck -->
+	
+	<model>
+		<name>Flight Deck</name>
+		<path>Aircraft/ATR-42-500/Models/Flightdeck/cockpit.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0.04</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+	</model>
+
+<!-- Cabin -->
+	
+	<model>
+		<name>Cabin</name>
+		<path>Aircraft/ATR-42-500/Models/Cabin/cabin.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+	</model>
+
+<!-- Cargo -->
+	
+	<model>
+		<name>Cargo</name>
+		<path>Aircraft/ATR-42-500/Models/Cabin/cargo.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+	</model>
+
+
+<!-- Airport Operations / Services -->
+
+ <model>
+ <name>Catering Vehicle</name>
+ <path>Aircraft/ATR-42-500/Models/Operations/Catering/catering.xml</path>
+ <condition>
+ <equals>
+			             <property>controls/switches/catering</property>
+                                            <value type="bool">true</value>
+ </equals>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>15</value>
+            </less-than>
+  </condition>   
+  <offsets>
+  <x-m> 6.5 </x-m>
+  <y-m>0</y-m>
+  <z-m>-1.45</z-m>
+<heading-deg>-225</heading-deg>
+<roll-deg>0</roll-deg>
+ <pitch-deg>1.6</pitch-deg>
+ </offsets>
+</model>
+
+ <model>
+ <name>Fuel Truck</name>
+ <path>Aircraft/ATR-42-500/Models/Operations/Fuel/citerne.xml</path>
+  <condition>
+ <equals>
+			             <property>controls/switches/fuel</property>
+                                            <value type="bool">true</value>
+ </equals>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>15</value>
+            </less-than>
+  </condition>   
+  <offsets>
+  <x-m>10</x-m>
+  <y-m>-16</y-m>
+  <z-m>-1.75</z-m>
+<roll-deg>0</roll-deg>
+<heading-deg>-90</heading-deg>
+            <pitch-deg>2</pitch-deg>
+ </offsets>
+</model>
+
+
+<model>
+<name>Bus</name>
+ <path>Aircraft/ATR-42-500/Models/Operations/Bus/bus.xml</path>
+ <condition>
+ <and>
+  <property>controls/switches/bus</property>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>15</value>
+            </less-than>
+ </and>
+ </condition>
+<offsets>
+            <x-m>-7</x-m>
+            <y-m>-20</y-m>
+            <z-m>-1.83</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>20</heading-deg>
+            <roll-deg>1.6</roll-deg>
+        </offsets>
+</model>
+
+
+<model>
+<name>GPU truck long</name>
+ <path>Aircraft/ATR-42-500/Models/Operations/Baggage/chariot.xml</path>
+
+ <condition>
+ <and>
+  <property>controls/switches/gpu</property>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>10</value>
+            </less-than>
+ </and>
+ </condition>
+<offsets>
+  	    <x-m>-16.5</x-m>
+            <y-m>-4.5</y-m>
+            <z-m>-1.45</z-m>
+            <pitch-deg>0</pitch-deg>
+            <heading-deg>180</heading-deg>
+            <roll-deg>-2</roll-deg>
+        </offsets>
+</model>
+
+<!-- Livery System -->
+    <nasal>
+        <load>
+            var livery_update = aircraft.livery_update.new("Aircraft/ATR-42-500/Models/Liveries", 10);
+        </load>
+
+        <unload>
+            livery_update.stop();
+        </unload>
+    </nasal>
+
+<!-- Livery Selection Animation -->
+
+    <animation>
+        <type>material</type>
+        <object-name>fuselage.015</object-name>
+        <object-name>wing.002</object-name>
+        <object-name>wing.003</object-name>
+        <object-name>misc.009</object-name>
+        <object-name>misc.010</object-name>
+        <object-name>misc.016</object-name>
+        <object-name>misc.017</object-name>
+        <object-name>wavefront obj</object-name>
+        <object-name>Misc.011</object-name>
+        <object-name>fuselage.020</object-name>
+        <object-name>fuselage.026</object-name>
+        <object-name>fuselage.028</object-name>
+        <object-name>fuselage.029</object-name>
+        <object-name>fuselage.030</object-name>
+        <object-name>fuselage.031</object-name>
+        <object-name>VStab</object-name>
+        <object-name>Rudder</object-name>
+        <object-name>GearDr1</object-name>
+        <object-name>GearDr2</object-name>
+        <object-name>Armature.017</object-name>
+        <object-name>Armature.014</object-name>
+        <object-name>fuselage</object-name>
+        <object-name>Nacelle</object-name>
+        <object-name>Misc.022</object-name>
+        <object-name>Misc.012</object-name>
+        <object-name>Misc.023</object-name>
+        <object-name>Nacelle.001</object-name>
+        <object-name>Misc.013</object-name>
+        <property-base>sim/model/livery</property-base>
+        <texture-prop>texture</texture-prop>
+        <texture>KFR.png</texture>
+    </animation>
+
+   <animation>
+       <type>material</type>
+       <object-name>VStab.light</object-name>
+       <object-name>Rudder.light</object-name>
+       <property-base>sim/model/livery</property-base>
+       <texture-prop>lights</texture-prop>
+       <texture>KFR-Lights.png</texture>
+   </animation>
+
+<model>
+ <path>Aircraft/ATR-42-500/Models/Effects/tyre-smoke-nose.xml</path>
+ <name>tyre-smoke-n</name>
+ <offsets>
+  <x-m>-18.00</x-m>
+  <y-m>0</y-m>
+  <z-m>-5.50</z-m>
+ </offsets>
+</model>
+
+
+<model>
+ <path>Aircraft/ATR-42-500/Models/Effects/tyre-smoke-left.xml</path>
+ <name>tyre-smoke-l</name>
+ <offsets>
+  <x-m>-1.30</x-m>
+  <y-m>-3.30</y-m>
+  <z-m>-5.70</z-m>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/ATR-42-500/Models/Effects/tyre-smoke-right.xml</path>
+ <name>tyre-smoke-r</name>
+ <offsets>
+  <x-m>-1.30</x-m>
+  <y-m>3.30</y-m>
+  <z-m>-5.70</z-m>
+ </offsets>
+</model>
+
+<!-- Aircraft Lights -->
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/greennav.xml</path>
+<name>Greenlight</name>     
+<offsets>
+<x-m>13.7</x-m>
+<y-m>-9.6</y-m>
+<z-m>2.1</z-m>     
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/rednav.xml</path>
+<name>Redlight</name>     
+<offsets>
+<x-m>-13.7</x-m>
+<y-m>-9.6</y-m>
+<z-m>2.1</z-m>      
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/strobe.xml</path>
+<name>flashright</name>     
+<offsets>
+<x-m>13.7</x-m>
+<y-m>-9.8</y-m>
+<z-m>2.1</z-m>   
+<heading-deg>90</heading-deg>      
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/strobe.xml</path>
+<name>flashleft</name>     
+<offsets>
+<x-m>-13.7</x-m>
+<y-m>-9.8</y-m>
+<z-m>2.1</z-m>    
+<heading-deg>90</heading-deg>  
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/strobe.xml</path>
+<name>flashrudder</name>     
+<offsets>
+<x-m>0</x-m>
+<y-m>-21.3</y-m>
+<z-m>5.6</z-m>    
+<heading-deg>90</heading-deg>  
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/landing-nose.xml</path>
+<name>NoseGearLandinglight</name>     
+<condition>
+ <equals>
+			             <property>gear/gear[0]/position-norm</property>
+                                            <value type="bool">true</value>
+ </equals>
+  </condition>
+
+<offsets>
+<x-m>0.00</x-m>
+<y-m>  -1.5</y-m> 
+<z-m>-0.7</z-m>  
+<heading-deg>-90</heading-deg>    
+</offsets>
+
+
+
+
+
+
+
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/landing-port.xml</path>
+<name>LeftWingLandinglight</name>
+<condition>
+ <equals>
+			             <property>gear/gear[1]/position-norm</property>
+                                            <value type="bool">true</value>
+ </equals>
+  </condition>     
+<offsets>
+<x-m>-1.55</x-m>
+<y-m>-9.6</y-m>
+<z-m>-0.7</z-m> 
+<heading-deg>-90</heading-deg>     
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/landing-stbd.xml</path>
+<name>RightWingLandinglight</name>
+<condition>
+ <equals>
+			             <property>gear/gear[2]/position-norm</property>
+                                            <value type="bool">true</value>
+ </equals>
+  </condition>     
+<offsets>
+<x-m>1.55</x-m>
+<y-m>-9.6</y-m>
+<z-m>-0.7</z-m>
+<heading-deg>-90</heading-deg>       
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/beacon.xml</path>
+<name>Beaconlight.top</name>     
+<offsets>
+<x-m>0.00</x-m>
+<y-m>-12</y-m>
+<z-m>2.1</z-m> 
+<heading-deg>90</heading-deg>     
+</offsets>
+</model>
+
+<model>
+<path>Aircraft/ATR-42-500/Models/lights/beacon.xml</path>
+<name>Beaconlight.bottom</name>     
+<offsets>
+<x-m>0.00</x-m>
+<y-m>-5</y-m>
+<z-m>-0.7</z-m> 
+<heading-deg>90</heading-deg>     
+</offsets>
+</model>
+	
+	<!-- 3D Model Animation, Propeller Animation -->
+	
+	<animation>
+		<type>spin</type>
+		<object-name>Prop1</object-name>
+		<object-name>PropHold1</object-name>
+		<property>engines/engine[0]/n1</property>
+		<factor>4</factor>
+		 <center>
+ 		 	<x-m>-3.978</x-m>
+ 		 	<y-m>-6.273</y-m>
+  			<z-m>1.701</z-m>
+ 		</center>
+ 		<axis>
+ 		 	<x>0.0</x>
+  			<y>1.0</y>
+  			<z>0.0</z>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>spin</type>
+		<object-name>Prop2</object-name>
+		<object-name>PropHold2</object-name>
+		<property>engines/engine[1]/n1</property>
+		<factor>4</factor>
+		 <center>
+ 		 	<x-m>3.944</x-m>
+ 		 	<y-m>-6.273</y-m>
+  			<z-m>1.698</z-m>
+ 		</center>
+ 		<axis>
+ 		 	<x>0.0</x>
+  			<y>-1.0</y>
+  			<z>0.0</z>
+ 		</axis>
+	</animation>
+<animation>
+ 		<type>rotate</type>
+ 		<object-name>Rudder</object-name>
+ 		<object-name>Rudder.light</object-name>
+ 		<property>controls/flight/rudder</property>
+		<factor>18</factor>
+ 		<axis>
+  			<x1-m>0.205</x1-m>
+  			<y1-m>-19.291</y1-m>
+  			<z1-m>1.157</z1-m>
+  			<x2-m>0.104</x2-m>
+  			<y2-m>-21.545</y2-m>
+  			<z2-m>5.145</z2-m>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Aileron1</object-name>
+		<property>surface-positions/right-aileron-pos-norm</property>
+		<factor>15</factor>
+ 		<axis>
+  			<x1-m>-13.543</x1-m>
+  			<y1-m>-10.337</y1-m>
+  			<z1-m>2.222</z1-m>
+  			<x2-m>-10.919</x2-m>
+  			<y2-m>-10.379</y2-m>
+  			<z2-m>2.018</z2-m>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Aileron2</object-name>
+		<property>surface-positions/left-aileron-pos-norm</property>
+		<factor>15</factor>
+ 		<axis>
+  			<x1-m>10.889</x1-m>
+  			<y1-m>-10.378</y1-m>
+  			<z1-m>2.155</z1-m>
+  			<x2-m>13.513</x2-m>
+  			<y2-m>-10.337</y2-m>
+  			<z2-m>2.116</z2-m>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Elevator</object-name>
+		<property>surface-positions/elevator-pos-norm</property>
+		<factor>10</factor>
+ 		<axis>
+  			<x1-m>-2.728</x1-m>
+  			<y1-m>-21.711</y1-m>
+  			<z1-m>4.958</z1-m>
+  			<x2-m>2.698</x2-m>
+  			<y2-m>-21.711</y2-m>
+  			<z2-m>4.958</z2-m>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Flap1</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>30</factor>
+ 		<axis>
+  			<x1-m>-10.848</x1-m>
+  			<y1-m>-10.396</y1-m>
+  			<z1-m>2.152</z1-m>
+  			<x2-m>-5.381</x2-m>
+  			<y2-m>-10.496</y2-m>
+  			<z2-m>1.815</z2-m>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Flap2</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>30</factor>
+ 		<axis>
+  			<x1-m>-5.305</x1-m>
+  			<y1-m>-10.498</y1-m>
+  			<z1-m>1.813</z1-m>
+  			<x2-m>-1.534</x2-m>
+  			<y2-m>-10.498</y2-m>
+  			<z2-m>1.813</z2-m>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Flap3</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>30</factor>
+ 		<axis>
+  			<x1-m>1.544</x1-m>
+  			<y1-m>-10.502</y1-m>
+  			<z1-m>2.008</z1-m>
+  			<x2-m>5.294</x2-m>
+  			<y2-m>-10.502</y2-m>
+  			<z2-m>2.008</z2-m>
+ 		</axis>
+	</animation>
+	<animation>
+		<type>rotate</type>
+		<object-name>Flap4</object-name>
+		<property>surface-positions/flap-pos-norm</property>
+		<factor>30</factor>
+ 		<axis>
+  			<x1-m>5.352</x1-m>
+  			<y1-m>-10.496</y1-m>
+  			<z1-m>2.009</z1-m>
+  			<x2-m>10.819</x2-m>
+  			<y2-m>-10.396</y2-m>
+  			<z2-m>2.152</z2-m>
+ 		</axis>
+	</animation>
+
+    <animation>
+        <name>gear1</name>
+        <object-name>MainWhells1</object-name>
+        <object-name>MainStrut1</object-name>
+    </animation>
+    <animation>
+        <name>gear2</name>
+        <object-name>MainWheels2</object-name>
+        <object-name>MainStrut2</object-name>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>MGear2Dr1</object-name>
+        <property>gear/gear[2]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>-123</dep>
+            </entry>
+            <entry>
+                <ind>.3</ind><dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+  			<x1-m>1.647</x1-m>
+  			<y1-m>-9.679</y1-m>
+  			<z1-m>-0.318</z1-m>
+  			<x2-m>1.636</x2-m>
+  			<y2-m>-10.515</y2-m>
+  			<z2-m>-0.309</z2-m>
+ 		</axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>MGear1Dr1</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>-123</dep>
+            </entry>
+            <entry>
+                <ind>.3</ind><dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+  			<x1-m>-1.680</x1-m>
+  			<y1-m>-10.500</y1-m>
+  			<z1-m>-0.280</z1-m>
+  			<x2-m>-1.690</x2-m>
+  			<y2-m>-9.693</y2-m>
+  			<z2-m>-0.290</z2-m>
+ 		</axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>gear1</object-name>
+        <property>gear/gear[1]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>-96.5</dep>
+            </entry>
+            <entry>
+                <ind>.3</ind><dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+		 	<x1-m>-1.445</x1-m>
+  			<y1-m>-9.946</y1-m>
+  			<z1-m>-0.332</z1-m>
+  			<x2-m>-1.429</x2-m>
+  			<y2-m>-9.815</y2-m>
+  			<z2-m>-0.342</z2-m>
+ 		</axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>gear2</object-name>
+        <property>gear/gear[2]/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>-93</dep>
+            </entry>
+            <entry>
+                <ind>.3</ind><dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+		 	<x1-m>1.432</x1-m>
+  			<y1-m>-9.818</y1-m>
+  			<z1-m>-0.301</z1-m>
+  			<x2-m>1.448</x2-m>
+  			<y2-m>-9.949</y2-m>
+  			<z2-m>-0.291</z2-m>
+ 		</axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>NoseGear</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>95</dep>
+            </entry>
+            <entry>
+                <ind>.25</ind><dep>95</dep>
+            </entry>
+
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+  			<x1-m>-0.054</x1-m>
+  			<y1-m>-1.769</y1-m>
+  			<z1-m>-0.435</z1-m>
+		 	<x2-m>0.026</x2-m>
+  			<y2-m>-1.769</y2-m>
+  			<z2-m>-0.435</z2-m>
+ 		</axis>
+    </animation>
+   <animation>
+       <type>rotate</type>
+        <object-name>NoseGearDr1</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>-100</dep>
+            </entry>
+            <entry>
+                <ind>.3</ind><dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+  			<x1-m>-0.209</x1-m>
+  			<y1-m>-1.859</y1-m>
+  			<z1-m>-0.724</z1-m>
+  			<x2-m>-0.220</x2-m>
+  			<y2-m>-1.383</y2-m>
+  			<z2-m>-0.687</z2-m>
+ 		</axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>NoseGearDr3</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>100</dep>
+            </entry>
+            <entry>
+                <ind>.3</ind><dep>0</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+  			<x1-m>0.188</x1-m>
+  			<y1-m>-1.858</y1-m>
+  			<z1-m>-0.727</z1-m>
+  			<x2-m>0.202</x2-m>
+  			<y2-m>-1.384</y2-m>
+  			<z2-m>-0.684</z2-m>
+ 		</axis>
+    </animation>
+    <animation>
+        <name>NoseGearDrF</name>
+        <object-name>NoseGearDr2</object-name>
+        <object-name>NoseGearDr4</object-name>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>NoseGearDrF</object-name>
+        <property>gear/gear/position-norm</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind><dep>0</dep>
+            </entry>
+            <entry>
+                <ind>.45</ind><dep>90</dep>
+            </entry>
+            <entry>
+                <ind>.7</ind><dep>90</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind><dep>0</dep>
+            </entry>
+        </interpolation>
+ 		<axis>
+  			<x1-m>-0.217</x1-m>
+  			<y1-m>-0.816</y1-m>
+  			<z1-m>-0.509</z1-m>
+  			<x2-m>0.187</x2-m>
+  			<y2-m>-0.815</y2-m>
+  			<z2-m>-0.509</z2-m>
+ 		</axis>
+    </animation>
+
+<!-- Passenger Door Animation -->
+
+	<animation>
+		<name>Left PAX door pick</name>
+		<type>pick</type>
+        <object-name>PassDr</object-name>
+        <object-name>fuselage.073</object-name>
+        <object-name>fuselage.072</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 systems.triggerDoor(systems.paxleftdoor, "paxleftdoor", "PAX left (main)");
+				</script>
+			</binding>
+		</action>
+	</animation>
+	<animation>
+		<name>Left PAX door rotate</name>
+		<type>rotate</type>
+        <object-name>PassDr</object-name>
+        <object-name>fuselage.073</object-name>
+        <object-name>fuselage.072</object-name>
+		<property>sim/model/door-positions/paxleftdoor/position-norm</property>
+		<factor>130</factor>
+		<axis>
+      <x1-m> -1.031 </x1-m>
+      <y1-m> -14.785 </y1-m>
+      <z1-m> -0.471 </z1-m>
+      <x2-m> -1.042 </x2-m>
+      <y2-m> -15.407 </y2-m>
+      <z2-m> -0.457 </z2-m>
+		</axis>
+	</animation>
+
+	<animation>
+		<name>Cargo door pick</name>
+		<type>pick</type>
+        <object-name>CargoDr</object-name>
+        <object-name>CargoDrRod2</object-name>
+        <object-name>CargoDrRod1</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script>
+				 systems.triggerDoor(systems.cargodoor, "cargodoor", "cargo");
+				</script>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Cargo Door rotate</name>
+		<type>rotate</type>
+        <object-name>CargoDr</object-name>
+        <object-name>CargoDrRod2</object-name>
+        <object-name>CargoDrRod1</object-name>
+		<property>sim/model/door-positions/cargodoor/position-norm</property>
+		<factor>-100</factor>
+		<axis>
+      <x1-m> -1.064 </x1-m>
+      <y1-m> -3.320 </y1-m>
+      <z1-m> 1.329 </z1-m>
+      <x2-m> -1.064 </x2-m>
+      <y2-m> -4.703 </y2-m>
+      <z2-m> 1.329 </z2-m>
+		</axis>
+	</animation>
+
+<!-- Engine Fire -->
+
+	<model>
+		<name>Engine fire 1</name>
+		<path>Aircraft/ATR-42-500/Models/Effects/enginefire.xml</path>
+		<offsets>
+ 		 	<x-m>-3.978</x-m>
+ 		 	<y-m>-06.273</y-m>
+  			<z-m>1.701</z-m>
+           <heading-deg>-90</heading-deg>
+		</offsets>
+		<condition>
+			<property>engines/engine[0]/on-fire</property>
+		</condition>
+	</model>
+
+	<model>
+		<name>Engine fire 2</name>
+		<path>Aircraft/ATR-42-500/Models/Effects/enginefire.xml</path>
+		<offsets>
+ 		 	<x-m>3.978</x-m>
+ 		 	<y-m>-6.273</y-m>
+  			<z-m>1.701</z-m>
+           <heading-deg>-90</heading-deg>
+		</offsets>
+		<condition>
+			<property>engines/engine[1]/on-fire</property>
+		</condition>
+	</model>
+
+<!-- Tyre Smoke -->
+
+<model>
+ <path>Aircraft/ATR-42-500/Models/Effects/tyre-smoke-nose.xml</path>
+ <name>tyre-smoke-n</name>
+ <offsets>
+<x-m>0.00</x-m>
+<y-m>  -1.5</y-m> 
+<z-m>-0.7</z-m> 
+  <heading-deg>-90</heading-deg>
+ </offsets>
+</model>
+
+
+<model>
+ <path>Aircraft/ATR-42-500/Models/Effects/tyre-smoke-left.xml</path>
+ <name>tyre-smoke-l</name>
+ <offsets>
+<x-m>-1.6</x-m>
+<y-m>-9.6</y-m>
+<z-m>-0.7</z-m> 
+  <heading-deg>-90</heading-deg>
+ </offsets>
+</model>
+
+<model>
+ <path>Aircraft/ATR-42-500/Models/Effects/tyre-smoke-right.xml</path>
+ <name>tyre-smoke-r</name>
+ <offsets>
+<x-m>1.6</x-m>
+<y-m>-9.6</y-m>
+<z-m>-0.7</z-m> 
+  <heading-deg>-90</heading-deg>
+ </offsets>
+</model>
+
+</PropertyList>

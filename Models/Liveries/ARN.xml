@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Aer Arann</name>
+            <texture>ARN.png</texture>
+	    <lights>ARN-light.png</lights>
+	    <seat-colour>blue-cloth.png</seat-colour>
+	    <seat-logo>logos/ARN.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

@@ -1,0 +1,551 @@
+<!-- 777-200
+Justin Smithies
+Syd Adams
+-->
+
+<PropertyList>
+
+<path>OHpanel.ac</path>
+
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>BCN.btn</object-name>
+<property>controls/lighting/beacon</property>
+   <factor>0.1</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>NAV.btn</object-name>
+<property>controls/lighting/nav-lights</property>
+   <factor>0.1</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>LOGO.btn</object-name>
+<property>controls/lighting/logo-lights</property>
+   <factor>0.1</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>WING.btn</object-name>
+<property>controls/lighting/wing-lights</property>
+   <factor>0.1</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>BATT.btn</object-name>
+<property>controls/electric/battery-switch</property>
+   <factor>0.0806</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>LGEN.btn</object-name>
+<property>controls/electric/engine/generator</property>
+   <factor>0.0806</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>RGEN.btn</object-name>
+<property>controls/electric/engine[1]/generator</property>
+   <factor>0.0806</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>APU.btn</object-name>
+<property>controls/electric/APU-generator</property>
+   <factor>0.0806</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>LBUS.btn</object-name>
+<property>controls/electric/engine/bus-tie</property>
+   <factor>0.1</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>textranslate</type>
+   <object-name>RBUS.btn</object-name>
+<property>controls/electric/engine[1]/bus-tie</property>
+   <factor>0.1</factor>
+   <axis>
+     <x>0</x>
+     <y>-1</y>
+     <z>0</z>
+   </axis>
+ </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>STRB.toggle</object-name>
+        <property>controls/lighting/strobe</property>
+        <factor>30</factor>
+        <center>
+            <x-m>0.012</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.512</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>TAXI.toggle</object-name>
+        <property>controls/lighting/landing-lights[1]</property>
+        <factor>30</factor>
+        <center>
+            <x-m>0.012</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.512</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>R-Lnd.toggle</object-name>
+        <property>controls/lighting/landing-lights[2]</property>
+        <factor>30</factor>
+        <center>
+            <x-m>0.012</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.514</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>L-Lnd.toggle</object-name>
+        <property>controls/lighting/landing-lights[0]</property>
+        <factor>30</factor>
+        <center>
+            <x-m>0.012</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.514</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>C-Lnd.toggle</object-name>
+        <property>controls/lighting/landing-lights[1]</property>
+        <factor>30</factor>
+        <center>
+            <x-m>0.012</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.527</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>LHboost1</object-name>
+        <property>controls/fuel/tank/boost-pump</property>
+        <factor>0.0806</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>LHboost2</object-name>
+        <property>controls/fuel/tank/boost-pump[1]</property>
+        <factor>0.0806</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>CTRboost1</object-name>
+        <property>controls/fuel/tank[1]/boost-pump</property>
+        <factor>0.0806</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>CTRboost2</object-name>
+        <property>controls/fuel/tank[1]/boost-pump[1]</property>
+        <factor>0.0806</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>RHboost1</object-name>
+        <property>controls/fuel/tank[2]/boost-pump</property>
+        <factor>0.0806</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>RHboost2</object-name>
+        <property>controls/fuel/tank[2]/boost-pump[1]</property>
+        <factor>0.0806</factor>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+
+<!-- OSG hotspots -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>BCN.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/lighting/beacon</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>NAV.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/lighting/nav-lights</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LOGO.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/lighting/logo-lights</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>WING.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/lighting/wing-lights</property>
+        </binding>
+        </action>
+    </animation>
+
+
+    <animation>
+        <type>pick</type>
+        <object-name>L-Light.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/lighting/landing-lights</property>
+        </binding>
+        </action>
+    </animation>
+
+
+    <animation>
+        <type>pick</type>
+        <object-name>BATT.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/electric/battery-switch</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LGEN.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/electric/engine/generator</property>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/electric/engine/bus-tie</property>
+                <property>controls/electric/engine/generator</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RGEN.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>controls/electric/engine[1]/generator</property>
+            </binding>
+            <binding>
+                <command>property-assign</command>
+                <property>controls/electric/engine[1]/bus-tie</property>
+                <property>controls/electric/engine[1]/generator</property>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>APU.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/electric/APU-generator</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LBUS.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/electric/engine/bus-tie</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RBUS.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/electric/engine[1]/bus-tie</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>STRB.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/lighting/strobe</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>TAXI.btn</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/lighting/taxi-lights</property>
+        </binding>
+        </action>
+    </animation>
+
+<!--  FUEL CONTROL  -->
+    <animation>
+        <type>pick</type>
+        <object-name>LHboost1</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>nasal</command>
+            <script>atr.fuel_pump(0,0)</script>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>LHboost2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>nasal</command>
+            <script>atr.fuel_pump(0,1)</script>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>CTRboost1</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>nasal</command>
+            <script>atr.fuel_pump(1,0)</script>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>CTRboost2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>nasal</command>
+            <script>atr.fuel_pump(1,1)</script>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RHboost1</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>nasal</command>
+            <script>atr.fuel_pump(2,0)</script>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>RHboost2</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>nasal</command>
+            <script>atr.fuel_pump(2,1)</script>
+        </binding>
+        </action>
+    </animation>
+
+</PropertyList>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<name>Show / Hide Crew</name>
+	<layout>vbox</layout>
+
+	<text>
+		<label>ATR-42-500 Crew</label>
+	</text>
+
+	<hrule />
+
+		<checkbox>
+			<label>Show / Hide Pilot</label>
+			<property>controls/lighting/pilot</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>false</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Show / Hide Co-Pilot</label>
+			<property>controls/lighting/co-pilot</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>false</live>
+		</checkbox>
+<hrule />
+		<button>
+			<legend>Close</legend>
+			<default>true</default>
+			<key>Esc</key>
+		<padding>10</padding>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+</PropertyList>

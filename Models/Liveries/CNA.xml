@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Cresder Nixrof Airways</name>
+            <texture>CNA.png</texture>
+	    <lights>CNA-light.png</lights>
+	    <seat-colour>red-leather.png</seat-colour>
+	    <seat-logo>logos/CNA.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

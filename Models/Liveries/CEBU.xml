@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">CEBU Pacific</name>
+            <texture>CEBU.png</texture>
+	    <lights>CEBU-light.png</lights>
+	    <seat-colour>blue-cloth.png</seat-colour>
+	    <seat-logo>logos/CEBU.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

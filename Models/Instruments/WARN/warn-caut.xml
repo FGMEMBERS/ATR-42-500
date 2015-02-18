@@ -1,0 +1,83 @@
+<!--
+The OMEGA Hangar's A321 Extra panels made by the omega hangar
+-->
+
+<PropertyList>
+
+ <path>warn-caut.ac</path>
+
+<!-- Pick / Select Animation for CAUTION SWITCH -->
+
+	<animation>
+		<name>Caution pick</name>
+		<type>pick</type>
+		<object-name>caution_lit</object-name>
+		<object-name>caution_unlit</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+			<property>controls/lighting/caution</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Master Caution lights</name>
+		<type>select</type>
+		<object-name>caution_lit</object-name>
+		<condition>
+			<property>controls/lighting/caution</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Master Caution lights</name>
+		<type>select</type>
+		<object-name>caution_unlit</object-name>
+		<condition>
+			<not>
+			<property>controls/lighting/caution</property>
+			</not>
+		</condition>
+	</animation>
+
+<!-- Pick / Select Animation for WARNING SWITCH -->
+
+	<animation>
+		<name>Warning pick</name>
+		<type>pick</type>
+		<object-name>warning_lit</object-name>
+		<object-name>warning_unlit</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+			<property>controls/lighting/warning</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Warning lights</name>
+		<type>select</type>
+		<object-name>warning_lit</object-name>
+		<condition>
+			<property>controls/lighting/warning</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Warning lights</name>
+		<type>select</type>
+		<object-name>warning_unlit</object-name>
+		<condition>
+			<not>
+			<property>controls/lighting/warning</property>
+			</not>
+		</condition>
+	</animation>
+
+</PropertyList>

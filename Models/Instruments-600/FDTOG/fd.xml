@@ -1,0 +1,57 @@
+<PropertyList>
+
+ <path>fd.ac</path>
+
+<!-- Cockpit Illumination -->
+
+	<animation>
+		<name>Cockpit illumination</name>
+		<type>material</type>
+		<object-name>rect</object-name>
+		<emission>
+			<red>0.17</red>
+			<green>0.17</green>
+			<blue>0.17</blue>
+			<factor-prop>controls/lighting/flood</factor-prop>
+		</emission>
+	</animation>
+
+<!-- Flight Director Switch Toggle Pick / Rotate -->
+
+	<animation>
+		<name>Flight director button pick</name>
+		<type>pick</type>
+		<object-name>NAV1SwtchL</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>autopilot/settings/flight-director</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Flight Director switch rotate</name>
+		<type>rotate</type>
+		<object-name>NAV1SwtchL</object-name>
+		<property>autopilot/settings/flight-director</property>
+		<interpolation>
+			<entry><ind>0</ind><dep>0</dep></entry>
+			<entry><ind>1</ind><dep>25</dep></entry>
+			<entry><ind>2</ind><dep>-25</dep></entry>
+		</interpolation>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+	</animation>
+
+</PropertyList>

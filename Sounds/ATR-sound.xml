@@ -1,0 +1,940 @@
+<?xml version="1.0"?>
+ 
+<PropertyList>
+
+ <fx>
+
+<!-- Cabin -->
+
+<seatbelt>
+<name>Seatbelt</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/seatbelt.wav</path>
+ <mode>once</mode>
+ <condition>
+ <and>
+  <property>controls/switches/seatbelt-sign</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</seatbelt>
+
+
+<music>
+<name>Music</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/music.wav</path>
+ <mode>looped</mode>
+ <condition>
+ <and>
+  <property>controls/switches/music</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</music>
+
+<music-merlion>
+<name>Music-merlion</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/music-merlion.wav</path>
+ <mode>looped</mode>
+ <condition>
+ <and>
+  <property>controls/switches/music-merlion</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</music-merlion>
+
+<music-cna>
+<name>Music-cna</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/music-cna.wav</path>
+ <mode>looped</mode>
+ <condition>
+ <and>
+  <property>controls/switches/music-cna</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</music-cna>
+
+<music2>
+<name>Music2</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/Deplaning.wav</path>
+ <mode>looped</mode>
+ <condition>
+ <and>
+  <property>controls/switches/music2</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</music2>
+
+<pretakeoff>
+<name>pretakeoff</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/Boarding.wav</path>
+ <mode>once</mode>
+ <condition>
+ <and>
+  <property>controls/switches/pretakeoff</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</pretakeoff>
+
+<climbing>
+<name>climbing</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/Takeoff.wav</path>
+ <mode>once</mode>
+ <condition>
+ <and>
+  <property>controls/switches/climbing</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</climbing>
+
+
+<descending>
+<name>descending</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/Descent.wav</path>
+ <mode>once</mode>
+ <condition>
+ <and>
+  <property>controls/switches/descending</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</descending>
+
+<arrival>
+<name>arrival</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/Deplaning.wav</path>
+ <mode>once</mode>
+ <condition>
+ <and>
+  <property>controls/switches/arrival</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</arrival>
+
+<emergency>
+<name>emergency</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/Landing.wav</path>
+ <mode>once</mode>
+ <condition>
+ <and>
+  <property>controls/switches/emergency</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</emergency>
+
+<safety>
+<name>safety</name>
+ <path>Aircraft/ATR-42-500/Sounds/Cabin/safety.wav</path>
+ <mode>once</mode>
+ <condition>
+ <and>
+  <property>controls/switches/safety</property>
+ </and>
+ </condition>
+  <volume>
+   <property>sim/sound/Evolume</property>
+  </volume>
+  <position>
+      <x>0.00</x>
+      <y>0.00</y>
+      <z>-0.00</z>
+ </position>
+ <reference-dist>10.0</reference-dist>
+ <max-dist>100.0</max-dist>
+</safety>
+
+    <engine>
+        <name>left n1</name>
+        <path>Aircraft/ATR-42-500/Sounds/engine_running_1.wav</path>
+        <mode>looped</mode>
+        <property>engines/engine[0]/n2</property>
+        <pitch>
+            <property>/engines/engine[0]/n2</property>
+            <offset>0</offset>
+            <factor>0.01</factor>
+            <min>0.0</min>
+            <max>1.0</max>
+        </pitch>
+        <volume>
+            <property>engines/engine[0]/n2</property>
+            <factor>0.1</factor>
+            <min>0.0</min>
+            <max>0.6</max>
+        </volume>
+        <volume>
+            <property>sim/sound/Evolume</property>
+        </volume>
+        <position>
+            <x>-5.7</x>
+            <y>9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>30.0</max-dist>
+    </engine>
+
+
+    <engine>
+        <name>leftn2</name>
+        <path>Aircraft/ATR-42-500/Sounds/props_running_1.wav</path>
+        <mode>looped</mode>
+        <property>engines/engine[0]/n2</property>
+        <pitch>
+            <property>/engines/engine[0]/n2</property>
+            <offset>0</offset>
+            <factor>0.01</factor>
+            <min>0.0</min>
+            <max>1.0</max>
+        </pitch>
+        <volume>
+            <property>engines/engine[0]/n2</property>
+            <factor>0.1</factor>
+            <min>0.0</min>
+            <max>0.6</max>
+        </volume>
+        <volume>
+            <property>sim/sound/Evolume</property>
+        </volume>
+        <position>
+            <x>-5.7</x>
+            <y>9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>30.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>right n1</name>
+        <path>Aircraft/ATR-42-500/Sounds/engine_running_2.wav</path>
+        <mode>looped</mode>
+        <property>engines/engine[1]/n2</property>
+        <volume>
+            <property>engines/engine[1]/n2</property>
+            <factor>0.1</factor>
+            <min>0.0</min>
+            <max>0.6</max>
+        </volume>
+        <volume>
+            <property>sim/sound/Evolume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[1]/n2</property>
+            <offset>0</offset>
+            <factor>0.01</factor>
+            <min>0.0</min>
+            <max>1.0</max>
+        </pitch>
+        <position>
+            <x>-5.75</x>
+            <y>-9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>30.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>propn2</name>
+        <path>Aircraft/ATR-42-500/Sounds/props_running_2.wav</path>
+        <mode>looped</mode>
+        <property>engines/engine[1]/n2</property>
+        <pitch>
+            <property>/engines/engine[1]/n2</property>
+            <offset>0</offset>
+            <factor>0.01</factor>
+            <min>0.0</min>
+            <max>1.0</max>
+        </pitch>
+        <volume>
+            <property>engines/engine[1]/n2</property>
+            <factor>0.1</factor>
+            <min>0.0</min>
+            <max>0.6</max>
+        </volume>
+        <volume>
+            <property>sim/sound/Evolume</property>
+        </volume>
+        <position>
+            <x>-5.7</x>
+            <y>9.8</y>
+            <z>-3</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>30.0</max-dist>
+    </engine>
+
+    <rumble>
+        <name>rumble</name>
+        <mode>looped</mode>
+        <path>Sounds/rumble.wav</path>
+        <condition>
+            <or>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+            </or>
+        </condition>
+        <volume>
+            <property>/velocities/groundspeed-kt</property>
+            <type>log</type>
+            <factor>0.5</factor>
+        </volume>
+        <position>
+            <x>-10</x>
+            <y>0</y>
+            <z>-5</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>25.0</max-dist>
+    </rumble>
+
+    <gear1>
+        <name>gear</name>
+        <mode>in-transit</mode>
+        <path>Aircraft/ATR-42-500/Sounds/gear.wav</path>
+        <property>/gear/gear[0]/position-norm</property>
+        <pitch>
+            <internal>dt_play</internal>
+            <offset>0.7</offset>
+            <factor>-0.001</factor>
+        </pitch>
+        <position>
+            <x>6</x>
+            <y>0</y>
+            <z>-5</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </gear1>
+
+    <gear1>
+        <name>gear-lock</name>
+        <path>Sounds/gear-lck.wav</path>
+        <condition>
+            <equals>
+                <property>/gear/gear[0]/position-norm</property>
+                <value>0</value>
+            </equals>
+        </condition>
+        <position>
+            <x>6.5</x>
+            <y>0</y>
+            <z>-5</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>20.0</max-dist>
+    </gear1>
+
+<squeal0>
+        <name>squeal</name>
+        <path>/Aircraft/ATR-42-500/Sounds/touchdown.wav</path>
+        <condition>
+            <or>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+            </or>
+        </condition>
+        <volume>
+            <property>sim/sound/Ovolume</property>
+        </volume>
+        <volume>
+            <property>/velocities/speed-down-fps</property>
+            <factor>0.05</factor>
+        </volume>
+        <volume>
+            <property>/velocities/airspeed-kt</property>
+            <factor>0.01</factor>
+        </volume>
+        <volume>
+            <internal>dt_stop</internal>
+            <factor>0.05</factor>
+            <max>1.0</max>
+        </volume>
+        <pitch>
+            <property>/velocities/airspeed-kt</property>
+            <factor>0.0025</factor>
+            <offset>1.2</offset>
+        </pitch>
+        <position>
+            <x>-6.5</x>
+            <y>0</y>
+            <z>-5</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>40.0</max-dist>
+    </squeal0>
+
+
+    <squeal1>
+      <name>squeal</name>
+      <path>Aircraft/ATR-42-500/Sounds/touch.wav</path>
+      <condition>
+	<not>
+            <less-than>
+                <property>velocities/groundspeed-kt</property>
+                <value>45</value>
+            </less-than>
+	</not>
+      </condition>
+        <volume>
+                <property>sim/sound/Evolume</property>
+        </volume>
+        <position>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </squeal1>
+
+    <flap>
+        <name>flaps</name>
+        <mode>in-transit</mode>
+        <path>Aircraft/ATR-42-500/Sounds/Flaps.wav</path>
+        <property>/surface-positions/flap-pos-norm</property>
+        <volume>
+            <factor>2.25</factor>
+        </volume>
+        <position>
+            <x>3</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </flap>
+
+    <wind>
+        <name>wind</name>
+        <mode>looped</mode>
+        <path>Sounds/wind.wav</path>
+        <property>/velocities/airspeed-kt</property>
+        <volume>
+            <property>/position/altitude-ft</property>
+            <factor>-0.000015</factor>
+            <offset>1.0</offset>
+            <min>0.1</min>
+            <max>1.0</max>
+        </volume>
+        <volume>
+            <property>/velocities/airspeed-kt</property>
+            <factor>0.0015</factor>
+            <min>0.03</min>
+            <max>0.25</max>
+        </volume>
+        <pitch>
+            <property>/velocities/airspeed-kt</property>
+            <factor>0.01</factor>
+            <offset>1.25</offset>
+        </pitch>
+        <position>
+            <x>-20</x>
+            <y>0</y>
+            <z>0.8</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </wind>
+
+    <stall>
+        <name>stall</name>
+        <mode>looped</mode>
+        <path>/Aircraft/ATR-42-500/Sounds/stall.wav</path>
+        <condition>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>80</value>
+            </less-than>
+            <not>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+                <property>/surface-positions/flap-pos-norm</property>
+                <property>/gear/gear[0]/position-norm</property>
+            </not>
+        </condition>
+        <volume>
+            <max>0.5</max>
+        </volume>
+        <position>
+            <x>-23</x>
+            <y>0</y>
+            <z>1</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </stall>
+
+    <stall>
+        <name>stall</name>
+        <mode>looped</mode>
+        <path>/Aircraft/ATR-42-500/Sounds/stall.wav</path>
+        <condition>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>100</value>
+            </less-than>
+            <not>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+                <property>/gear/gear[0]/position-norm</property>
+            </not>
+        </condition>
+        <volume>
+            <max>0.5</max>
+        </volume>
+        <position>
+            <x>-22</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </stall>
+
+    <stall>
+        <name>stall</name>
+        <mode>looped</mode>
+        <path>/Aircraft/ATR-42-500/Sounds/stall.wav</path>
+        <condition>
+            <less-than>
+                <property>velocities/airspeed-kt</property>
+                <value>120</value>
+            </less-than>
+            <not>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+                <property>/surface-positions/flap-pos-norm</property>
+            </not>
+        </condition>
+        <volume>
+            <max>0.5</max>
+        </volume>
+        <position>
+            <x>-22</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </stall>
+
+    <switch>
+        <name>click on</name>
+        <mode>once</mode>
+        <path>Aircraft/ATR-42-500/Sounds/click.wav</path>
+        <condition>
+            <property>/sim/sound/switch</property>
+        </condition>
+        <volume>
+            <factor>0.45</factor>
+        </volume>
+        <position>
+            <x>-23</x>
+            <y>0</y>
+            <z>1</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </switch>
+
+    <switch>
+        <name>click off</name>
+        <mode>once</mode>
+        <path>Aircraft/ATR-42-500/Sounds/click.wav</path>
+        <condition>
+            <not>
+                <property>/sim/sound/switch</property>
+            </not>
+        </condition>
+        <volume>
+            <factor>0.45</factor>
+        </volume>
+        <position>
+            <x>-23</x>
+            <y>0</y>
+            <z>1</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </switch>
+
+    <speedbrake>
+        <name>speedbrake</name>
+        <mode>in-transit</mode>
+        <path>Aircraft/ATR-42-500/Sounds/engine_running.wav</path>
+        <volume>
+            <factor>0.45</factor>
+        </volume>
+        <position>
+            <x>5</x>
+            <y>0</y>
+            <z>0</z>
+        </position>
+        <reference-dist>2.0</reference-dist>
+        <max-dist>5.0</max-dist>
+    </speedbrake>
+
+<!-- Crashed -->
+
+<crash>
+  <name>intense ground contact</name>
+  <mode>once</mode>
+  <path>Sounds/crash.wav</path>
+  <property>sim/crashed</property>
+  <volume>
+    <factor>1</factor>
+  </volume>
+  <pitch>
+    <factor>1.5</factor>
+  </pitch>
+</crash>
+
+<!-- Cockpit GPWS -->
+
+        <altitude1>
+            <name>alt-10</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-10.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>10</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude1>
+
+        <altitude2>
+            <name>alt-20</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-20.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>20</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude2>
+
+        <altitude3>
+            <name>alt-30</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-30.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>30</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude3>
+
+        <altitude4>
+            <name>alt-40</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-40.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>40</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude4>
+
+        <altitude5>
+            <name>alt-50</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-50.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>50</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude5>
+
+        <altitude6>
+            <name>alt-100</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-100.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>100</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude6>
+
+        <altitude7>
+            <name>alt-200</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-200.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>200</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude7>
+
+        <altitude8>
+            <name>alt-300</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-300.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>300</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude8>
+
+        <altitude9>
+            <name>alt-400</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-400.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>400</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude9>
+
+        <altitude10>
+            <name>alt-500</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-500.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>500</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude10>
+
+        <altitude11>
+            <name>alt-1000</name>
+            <reference-dist>1.0</reference-dist>
+            <max-dist>2.0</max-dist>
+            <mode>once</mode>
+            <path>Aircraft/ATR-42-500/Sounds/altitude-1000.wav</path>
+            <condition>
+				<less-than-equals>
+                    		<property>position/altitude-agl-ft</property>
+                    		<value>1000</value>
+                  	</less-than-equals>
+            </condition>
+            <volume>
+                <property>sim/sound/Evolume</property>
+            </volume>
+            <position>
+                <x>-5</x>
+                <y>0</y>
+                <z>0</z>
+            </position>
+        </altitude11> 
+
+</fx>
+
+</PropertyList>

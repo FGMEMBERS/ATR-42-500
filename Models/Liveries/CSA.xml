@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Czech Airlines</name>
+            <texture>CSA.png</texture>
+	    <lights>CSA-light.png</lights>
+	    <seat-colour>beige-leather.png</seat-colour>
+	    <seat-logo>logos/CSA.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

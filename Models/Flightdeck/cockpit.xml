@@ -1,0 +1,669 @@
+<!-- ATR-42-500 Flightdeck by Narendran M -->
+
+<PropertyList>
+
+ <path>Cockpit.ac</path>
+
+<!-- Cockpit Illumination -->
+
+	<animation>
+		<name>Cockpit Illumination Select</name>
+		<type>select</type>
+		<object-name>object-lit</object-name>
+		<condition>
+			<property>controls/lighting/flood</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Cockpit illumination</name>
+		<type>material</type>
+		<object-name>object-lit</object-name>
+		<emission>
+			<red>0.13</red>
+			<green>0.13</green>
+			<blue>0.13</blue>
+			<factor-prop>controls/lighting/flood</factor-prop>
+		</emission>
+	</animation>
+
+<!-- Aircraft Crew - Pilot / Co-pilot -->
+
+	<animation>
+		<name>Show / Hide Pilot on Select Animation</name>
+		<type>select</type>
+		<object-name>pilot</object-name>
+		<condition>
+			<property>controls/lighting/pilot</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Show / Hide Co-Pilot on Select Animation</name>
+		<type>select</type>
+		<object-name>co-pilot</object-name>
+		<condition>
+			<property>controls/lighting/co-pilot</property>
+		</condition>
+	</animation>
+
+<!-- Overhead Panel -->
+
+	<model>
+		<name>Overhead Panel</name>
+		<path>Aircraft/ATR-42-500/Models/Flightdeck/OHpanel.xml</path>
+        <offsets>
+            <x-m>-0.023</x-m>
+            <y-m>-2.145</y-m>
+            <z-m>1.37</z-m>
+            <pitch-deg>70</pitch-deg>
+            <roll-deg>0</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Gear Base and Panel -->
+
+	<model>
+		<name>Gear Base and Panel</name>
+		<path>Aircraft/ATR-42-500/Models/Flightdeck/gear.xml</path>
+        <offsets>
+            <x-m>0.073</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.684</z-m>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>1</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- EADI Left -->
+	
+	<model>
+		<name>EADI Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/EADI/eadi.xml</path>
+        <offsets>
+            <x-m>-0.403</x-m>
+            <y-m>-1.419</y-m>
+            <z-m>0.731</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- ESHI Left -->
+	
+	<model>
+		<name>ESHI Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/EHSI/ehsi.xml</path>
+        <offsets>
+            <x-m>-0.403</x-m>
+            <y-m>-1.417</y-m>
+            <z-m>0.614</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- ASI Left -->
+	
+	<model>
+		<name>ASI Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ASI/asi300.xml</path>
+        <offsets>
+            <x-m>-0.503</x-m>
+            <y-m>-1.421</y-m>
+            <z-m>0.729</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- RMI Left -->
+	
+	<model>
+		<name>RMI Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/RMI/rmi.xml</path>
+        <offsets>
+            <x-m>-0.503</x-m>
+            <y-m>-1.422</y-m>
+            <z-m>0.646</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Clock Left -->
+	
+	<model>
+		<name>Clock Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CLK/clock.xml</path>
+        <offsets>
+            <x-m>-0.58</x-m>
+            <y-m>-1.432</y-m>
+            <z-m>0.646</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- ALT Left -->
+	
+	<model>
+		<name>ALT Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ALT/altimeter1.xml</path>
+        <offsets>
+            <x-m>-0.303</x-m>
+            <y-m>-1.42</y-m>
+            <z-m>0.713</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Warning / Caution Left -->
+	
+	<model>
+		<name>Warning Caution Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/WARN/warn-caut.xml</path>
+        <offsets>
+            <x-m>-0.287</x-m>
+            <y-m>-1.408</y-m>
+            <z-m>0.77</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- VSI Left -->
+	
+	<model>
+		<name>VSI Left</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/VSI/vsi.xml</path>
+        <offsets>
+            <x-m>-0.303</x-m>
+            <y-m>-1.42</y-m>
+            <z-m>0.627</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- EADI Right -->
+	
+	<model>
+		<name>EADI Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/EADI/eadi.xml</path>
+        <offsets>
+            <x-m>0.36</x-m>
+            <y-m>-1.425</y-m>
+            <z-m>0.731</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- ESHI Right -->
+	
+	<model>
+		<name>ESHI Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/EHSI/ehsi.xml</path>
+        <offsets>
+            <x-m>0.36</x-m>
+            <y-m>-1.425</y-m>
+            <z-m>0.614</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- ASI Right -->
+	
+	<model>
+		<name>ASI Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ASI/asi300.xml</path>
+        <offsets>
+            <x-m>0.46</x-m>
+            <y-m>-1.429</y-m>
+            <z-m>0.729</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- RMI Right -->
+	
+	<model>
+		<name>RMI Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/RMI/rmi.xml</path>
+        <offsets>
+            <x-m>0.46</x-m>
+            <y-m>-1.43</y-m>
+            <z-m>0.646</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Clock Right -->
+	
+	<model>
+		<name>Clock Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CLK/clock.xml</path>
+        <offsets>
+            <x-m>0.546</x-m>
+            <y-m>-1.44</y-m>
+            <z-m>0.646</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- ALT Right -->
+	
+	<model>
+		<name>ALT Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ALT/altimeter1.xml</path>
+        <offsets>
+            <x-m>0.26</x-m>
+            <y-m>-1.412</y-m>
+            <z-m>0.712</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Warning / Caution Right -->
+	
+	<model>
+		<name>Warning Caution Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/WARN/warn-caut.xml</path>
+        <offsets>
+            <x-m>0.253</x-m>
+            <y-m>-1.416</y-m>
+            <z-m>0.77</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- VSI Right -->
+	
+	<model>
+		<name>VSI Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/VSI/vsi.xml</path>
+        <offsets>
+            <x-m>0.24</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.627</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Standby AI -->
+	
+	<model>
+		<name>Standby AI</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/Stby-AI/Stby-AI.xml</path>
+        <offsets>
+            <x-m>-0.22</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.745</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- CCU -->
+	
+	<model>
+		<name>Standby AI</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CCU/ccu65.xml</path>
+        <offsets>
+            <x-m>-0.22</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.59</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Altitude Setter -->
+	
+	<model>
+		<name>Altitude Setter</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ALS/altset.xml</path>
+        <offsets>
+            <x-m>-0.209</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.535</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Extra Panel 1 -->
+	
+	<model>
+		<name>Extra Instruments</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/EXTRA/extra1.xml</path>
+        <offsets>
+            <x-m>-0.22</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.66</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Engine / Propeller Instruments -->
+
+<!-- Torque Gauges -->
+
+	<model>
+		<name>Torque 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/torq1.xml</path>
+        <offsets>
+            <x-m>-0.1475</x-m>
+            <y-m>-1.424</y-m>
+            <z-m>0.765</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>Torque 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/torq2.xml</path>
+        <offsets>
+            <x-m>-0.076</x-m>
+            <y-m>-1.424</y-m>
+            <z-m>0.765</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Turbine Gauges -->
+
+	<model>
+		<name>Turbine 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/n21.xml</path>
+        <offsets>
+            <x-m>-0.1475</x-m>
+            <y-m>-1.425</y-m>
+            <z-m>0.701</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>Turbine 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/n22.xml</path>
+        <offsets>
+            <x-m>-0.076</x-m>
+            <y-m>-1.425</y-m>
+            <z-m>0.701</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Fuel Flow Gauges -->
+
+	<model>
+		<name>FUEL 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/fflow1.xml</path>
+        <offsets>
+            <x-m>-0.1475</x-m>
+            <y-m>-1.426</y-m>
+            <z-m>0.637</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>FUEL 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/fflow2.xml</path>
+        <offsets>
+            <x-m>-0.076</x-m>
+            <y-m>-1.426</y-m>
+            <z-m>0.637</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Propeller RPM Gauges -->
+
+	<model>
+		<name>RPM 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/rpm1.xml</path>
+        <offsets>
+            <x-m>-0.1475</x-m>
+            <y-m>-1.427</y-m>
+            <z-m>0.573</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>RPM 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/rpm2.xml</path>
+        <offsets>
+            <x-m>-0.076</x-m>
+            <y-m>-1.427</y-m>
+            <z-m>0.573</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- ITT Gauges -->
+
+	<model>
+		<name>ITT 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/itt1.xml</path>
+        <offsets>
+            <x-m>-0.1475</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.508</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>ITT 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/itt2.xml</path>
+        <offsets>
+            <x-m>-0.076</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.508</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Oil Gauges -->
+
+	<model>
+		<name>OIL 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/oilp1.xml</path>
+        <offsets>
+            <x-m>0.14</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.637</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>OIL 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/ENG-INS/oilp2.xml</path>
+        <offsets>
+            <x-m>0.14</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.701</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- GPS System (KLN90B) -->
+
+	<model>
+		<name>KLN90B GPS</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/KLN90B/kln90b.xml</path>
+        <offsets>
+            <x-m>-0.033</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.9</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Autopilot Toggle Switches -->
+
+	<model>
+		<name>FDC</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/FDC/fdc.xml</path>
+        <offsets>
+            <x-m>-0.033</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.852</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- CTL Radio Instruments -->
+
+	<model>
+		<name>CTL221</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CTL/ctl22-com1.xml</path>
+        <offsets>
+            <x-m>-0.138</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.895</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>CTL222</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CTL/ctl22-com2.xml</path>
+        <offsets>
+            <x-m>0.073</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.895</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Autopilot Controllers -->
+
+	<model>
+		<name>AP CTRL 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/AP-CTRL/AP2.xml</path>
+        <offsets>
+            <x-m>0.1</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.52</z-m>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>1</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Light Switches -->
+
+	<model>
+		<name>Light Switches</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/LIGHT/light-panel.xml</path>
+        <offsets>
+            <x-m>0.1</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.52</z-m>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>1</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Flaps Indicator -->
+
+	<model>
+		<name>Flaps Indicator</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/FLAPS/flaps.xml</path>
+        <offsets>
+            <x-m>-0.01</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.727</z-m>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>1</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Flaps Flight Director Toggle -->
+
+	<model>
+		<name>FD Toggler in Glareshield 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/FDTOG/fd.xml</path>
+        <offsets>
+            <x-m>-0.267</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.848</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>FD Toggler in Glareshield 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/FDTOG/fd2.xml</path>
+        <offsets>
+            <x-m>0.206</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.848</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+	</model>
+
+<!-- CDU -->
+
+	<model>
+		<name>CDU1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CDU/cdu.xml</path>
+        <offsets>
+            <x-m>-0.175</x-m>
+            <y-m>-1.52</y-m>
+            <z-m>0.38</z-m>
+            <pitch-deg>-61</pitch-deg>
+            <roll-deg>0</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>CDU2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CDU/cdu.xml</path>
+        <offsets>
+            <x-m>0.135</x-m>
+            <y-m>-1.52</y-m>
+            <z-m>0.38</z-m>
+            <pitch-deg>-61</pitch-deg>
+            <roll-deg>0</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+</PropertyList>

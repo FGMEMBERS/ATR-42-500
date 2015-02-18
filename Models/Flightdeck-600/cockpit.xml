@@ -1,0 +1,278 @@
+<!-- ATR-42-500 Flightdeck by Narendran M -->
+
+<PropertyList>
+
+ <path>Cockpit.ac</path>
+
+<!-- Cockpit Illumination -->
+
+	<animation>
+		<name>Cockpit Illumination Select</name>
+		<type>select</type>
+		<object-name>object.lit</object-name>
+		<condition>
+			<property>controls/lighting/flood</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Cockpit illumination</name>
+		<type>material</type>
+		<object-name>object.lit</object-name>
+		<emission>
+			<red>0.13</red>
+			<green>0.13</green>
+			<blue>0.13</blue>
+			<factor-prop>controls/lighting/flood</factor-prop>
+		</emission>
+	</animation>
+
+<!-- Overhead Panel -->
+
+	<model>
+		<name>Overhead Panel</name>
+		<path>Aircraft/ATR-42-500/Models/Flightdeck-600/OHpanel.xml</path>
+        <offsets>
+            <x-m>-0.023</x-m>
+            <y-m>-2.145</y-m>
+            <z-m>1.37</z-m>
+            <pitch-deg>70</pitch-deg>
+            <roll-deg>0</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Gear Base and Panel -->
+
+	<model>
+		<name>Gear Base and Panel</name>
+		<path>Aircraft/ATR-42-500/Models/Flightdeck-600/gear.xml</path>
+        <offsets>
+            <x-m>0.073</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.684</z-m>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>1</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- CDU -->
+
+	<model>
+		<name>CDU1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CDU/cdu-600.xml</path>
+        <offsets>
+            <x-m>-0.175</x-m>
+            <y-m>-1.52</y-m>
+            <z-m>0.38</z-m>
+            <pitch-deg>-61</pitch-deg>
+            <roll-deg>0</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>CDU2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CDU/cdu-600.xml</path>
+        <offsets>
+            <x-m>0.135</x-m>
+            <y-m>-1.52</y-m>
+            <z-m>0.38</z-m>
+            <pitch-deg>-61</pitch-deg>
+            <roll-deg>0</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Primus-1000 Honeywell Instruments -->
+
+<!-- PFD -->
+
+	<model>
+		<name>PFD Left</name>
+		<path>Aircraft/Instruments-3d/primus-1000/PFD/PFD.xml</path>
+        <offsets>
+            <x-m>-0.514</x-m>
+            <y-m>-1.44</y-m>
+            <z-m>0.66</z-m>
+            <pitch-deg>-5</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>PFD Right</name>
+		<path>Aircraft/Instruments-3d/primus-1000/PFD/PFD.xml</path>
+        <offsets>
+            <x-m>0.475</x-m>
+            <y-m>-1.44</y-m>
+            <z-m>0.66</z-m>
+            <pitch-deg>-5</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- MFD -->
+
+	<model>
+		<name>MFD Left</name>
+		<path>Aircraft/Instruments-3d/primus-1000/MFD/MFD.xml</path>
+        <offsets>
+            <x-m>-0.331</x-m>
+            <y-m>-1.437</y-m>
+            <z-m>0.66</z-m>
+            <pitch-deg>-5</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>MFD Right</name>
+		<path>Aircraft/Instruments-3d/primus-1000/MFD/MFD.xml</path>
+        <offsets>
+            <x-m>0.288</x-m>
+            <y-m>-1.437</y-m>
+            <z-m>0.66</z-m>
+            <pitch-deg>-5</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- EICAS -->
+
+	<model>
+		<name>MFD Right</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments-600/EICAS/EICAS.xml</path>
+        <offsets>
+            <x-m>-0.066</x-m>
+            <y-m>-1.437</y-m>
+            <z-m>0.66</z-m>
+            <pitch-deg>-5</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Altimeter -->
+
+	<model>
+		<name>Altimeter</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments-600/ALT.xml</path>
+        <offsets>
+            <x-m>-0.2</x-m>
+            <y-m>-1.434</y-m>
+            <z-m>0.74</z-m>
+            <pitch-deg>-5</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- HSI -->
+
+	<model>
+		<name>HSI</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments-600/hsi.xml</path>
+        <offsets>
+            <x-m>-0.2</x-m>
+            <y-m>-1.434</y-m>
+            <z-m>0.64</z-m>
+            <pitch-deg>-5</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- GPS System (KLN90B) -->
+
+	<model>
+		<name>KLN90B GPS</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/KLN90B/kln90b.xml</path>
+        <offsets>
+            <x-m>-0.033</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.9</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Autopilot Toggle Switches -->
+
+	<model>
+		<name>FDC</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/FDC/fdc.xml</path>
+        <offsets>
+            <x-m>-0.033</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.852</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- CTL Radio Instruments -->
+
+	<model>
+		<name>CTL221</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CTL/ctl22-com1.xml</path>
+        <offsets>
+            <x-m>-0.138</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.895</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>CTL222</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/CTL/ctl22-com2.xml</path>
+        <offsets>
+            <x-m>0.073</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.895</z-m>
+            <pitch-deg>0</pitch-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Flaps Indicator -->
+
+	<model>
+		<name>Flaps Indicator</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments/FLAPS/flaps.xml</path>
+        <offsets>
+            <x-m>0.14</x-m>
+            <y-m>-1.428</y-m>
+            <z-m>0.637</z-m>
+            <pitch-deg>0</pitch-deg>
+            <roll-deg>1</roll-deg>
+	  <heading-deg>-90</heading-deg>
+        </offsets>
+	</model>
+
+<!-- Flight Director Toggle -->
+
+	<model>
+		<name>FD Toggler in Glareshield 1</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments-600/FDTOG/fd.xml</path>
+        <offsets>
+            <x-m>-0.267</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.848</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+	</model>
+
+	<model>
+		<name>FD Toggler in Glareshield 2</name>
+		<path>Aircraft/ATR-42-500/Models/Instruments-600/FDTOG/fd2.xml</path>
+        <offsets>
+            <x-m>0.206</x-m>
+            <y-m>-1.458</y-m>
+            <z-m>0.848</z-m>
+            <pitch-deg>0</pitch-deg>
+        </offsets>
+	</model>
+
+
+</PropertyList>

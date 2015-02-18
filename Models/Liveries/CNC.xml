@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Cresder Nixrof Airways Cargo</name>
+            <texture>CNA-cargo.png</texture>
+	    <lights>CNA-light.png</lights>
+<configuration type="string">cargo</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

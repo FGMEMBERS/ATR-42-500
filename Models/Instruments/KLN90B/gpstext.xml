@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+
+<!--
+Honeywell Bendix/King KLN-90B GPS
+-->
+
+<PropertyList>
+
+  <name>KLN-90B</name>
+  <w-base>300</w-base>
+  <h-base>142</h-base>
+
+
+ <layers>
+
+   <layer>
+     <name>LH line1</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/LHmode-string[0]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-140</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>56</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>LH line2</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/LHmode-string[1]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-140</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>35</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>LH line3</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/LHmode-string[2]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-140</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>15</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>LH line4</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/LHmode-string[3]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-140</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-5</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>LH line5</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/LHmode-string[4]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-140</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-25</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>LH line6</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/LHmode-string[5]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-140</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-45</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>LH line7</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/LHmode-string[6]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-140</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-65</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+<!-- RH menu-->
+
+   <layer>
+     <name>RH line1</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/RHmode-string[0]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>-50</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>55</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>RH line2</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/RHmode-string[1]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>20</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>35</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>RH line3</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/RHmode-string[2]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>20</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>15</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>RH line4</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/RHmode-string[3]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>20</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-5</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>RH line5</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/RHmode-string[4]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>20</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-25</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>RH line6</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/RHmode-string[5]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>20</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-45</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+   <layer>
+     <name>RH line7</name>
+     <type>text</type>
+     <font>courier-bold</font>
+     <point-size>14</point-size>
+     <color>
+       <red>0.4</red>
+       <green>1.0</green>
+       <blue>0.1</blue>
+     </color>
+     <chunks>
+       <chunk>
+         <type>text-value</type>
+         <property>instrumentation/gps-annunciator/RHmode-string[6]</property>
+       </chunk>
+     </chunks>
+     <transformations>
+       <transformation>
+         <type>x-shift</type>
+         <offset>20</offset>
+       </transformation>
+       <transformation>
+         <type>y-shift</type>
+         <offset>-65</offset>
+       </transformation>
+     </transformations>
+   </layer>
+
+</layers>
+
+</PropertyList>

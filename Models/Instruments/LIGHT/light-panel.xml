@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<path>light-panel.ac</path>
+
+<!-- Flood Light Illumination -->
+<animation>		
+		<name>Flood Light illumination</name>
+		<type>material</type>
+		<object-name>APcontrol</object-name>
+		<emission>
+			<red>0.12</red>
+			<green>0.12</green>
+			<blue>0.12</blue>
+			<factor-prop>controls/lighting/flood</factor-prop>
+		</emission>
+	</animation>
+
+<!-- Light Switch Pick Animations -->
+
+	<animation>
+		<name>Land Left pick</name>
+		<type>pick</type>
+		<object-name>Land.Left.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/landing-lights[0]</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Land / Taxi Nose pick</name>
+		<type>pick</type>
+		<object-name>Land.Nose.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/landing-lights[1]</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Land Right pick</name>
+		<type>pick</type>
+		<object-name>Land.Right.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/landing-lights[2]</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Cockpit Flood Lights pick</name>
+		<type>pick</type>
+		<object-name>Flood.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/flood</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Navigation Lights pick</name>
+		<type>pick</type>
+		<object-name>Nav.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/nav-lights</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Strobe Lights pick</name>
+		<type>pick</type>
+		<object-name>Strobe.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/strobe</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Beacon Lights pick</name>
+		<type>pick</type>
+		<object-name>Beacon.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/beacon</property>
+			</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>3D cones pick</name>
+		<type>pick</type>
+		<object-name>Bright.Btn</object-name>
+		<action>
+			<button>0</button>
+			<repeatable type="bool">false</repeatable>
+			<binding>
+				<command>property-toggle</command>
+				<property>controls/lighting/cones</property>
+			</binding>
+		</action>
+	</animation>
+
+<!-- Light Indicators Select Animation -->
+
+	<animation>
+		<name>Land Left Select</name>
+		<type>select</type>
+		<object-name>Land.Left.Light</object-name>
+		<condition>
+			<property>controls/lighting/landing-lights[0]</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Land Nose Select</name>
+		<type>select</type>
+		<object-name>Land.Nose.Light</object-name>
+		<condition>
+			<property>controls/lighting/landing-lights[1]</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Land Right Select</name>
+		<type>select</type>
+		<object-name>Land.Right.Light</object-name>
+		<condition>
+			<property>controls/lighting/landing-lights[2]</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Navigation Select</name>
+		<type>select</type>
+		<object-name>Nav.Light</object-name>
+		<condition>
+			<property>controls/lighting/nav-lights</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Strove Select</name>
+		<type>select</type>
+		<object-name>Strobe.Light</object-name>
+		<condition>
+			<property>controls/lighting/strobe</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Beacon Select</name>
+		<type>select</type>
+		<object-name>Beacon.Light</object-name>
+		<condition>
+			<property>controls/lighting/beacon</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>Cockpit Flood Select</name>
+		<type>select</type>
+		<object-name>Flood.Light</object-name>
+		<condition>
+			<property>controls/lighting/flood</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<name>3D cones Select</name>
+		<type>select</type>
+		<object-name>Bright.Light</object-name>
+		<condition>
+			<property>controls/lighting/cones</property>
+		</condition>
+	</animation>
+
+</PropertyList>
