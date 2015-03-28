@@ -424,7 +424,7 @@
 
 <squeal0>
         <name>squeal</name>
-        <path>/Aircraft/ATR-42-500/Sounds/touchdown.wav</path>
+        <path>Aircraft/ATR-42-500/Sounds/touchdown.wav</path>
         <condition>
             <or>
                 <property>/gear/gear[0]/wow</property>
@@ -538,7 +538,7 @@
     <stall>
         <name>stall</name>
         <mode>looped</mode>
-        <path>/Aircraft/ATR-42-500/Sounds/stall.wav</path>
+        <path>Aircraft/ATR-42-500/Sounds/stall.wav</path>
         <condition>
             <less-than>
                 <property>velocities/airspeed-kt</property>
@@ -567,7 +567,7 @@
     <stall>
         <name>stall</name>
         <mode>looped</mode>
-        <path>/Aircraft/ATR-42-500/Sounds/stall.wav</path>
+        <path>Aircraft/ATR-42-500/Sounds/stall.wav</path>
         <condition>
             <less-than>
                 <property>velocities/airspeed-kt</property>
@@ -595,7 +595,7 @@
     <stall>
         <name>stall</name>
         <mode>looped</mode>
-        <path>/Aircraft/ATR-42-500/Sounds/stall.wav</path>
+        <path>Aircraft/ATR-42-500/Sounds/stall.wav</path>
         <condition>
             <less-than>
                 <property>velocities/airspeed-kt</property>
