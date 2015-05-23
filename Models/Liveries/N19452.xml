@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">Continental Express</name>
+            <texture>Liveries/N19452.png</texture>
+	    <lights>Liveries/N19452-lights.png</lights>
+	    <seat-colour>blue-leather.png</seat-colour>
+	    <seat-logo>logos/N19452.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>

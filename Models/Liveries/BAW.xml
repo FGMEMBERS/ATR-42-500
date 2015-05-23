@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+        <livery>
+            <name type="string">British Airways</name>
+            <texture>Liveries/BAW.png</texture>
+	    <lights>Liveries/BAW-Lights.png</lights>
+	    <seat-colour>leather2.png</seat-colour>
+	    <seat-logo>logos/BAW.png</seat-logo>
+<configuration type="string">pax</configuration>
+        </livery>
+    </model>
+</sim>
+</PropertyList>
