@@ -7,7 +7,7 @@ name "PropBlur"
 loc -0.616055 -1.00732e-06 0
 data 10
 Circle.002
-texture "/home/narendranm/Documents/OMEGA Hangar/ATR-42/Prop-blus/propblur.png"
+texture "propblur.png"
 crease 30.000000
 numvert 66
 0.616 -1.52841 -1.52841
